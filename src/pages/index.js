@@ -10,9 +10,10 @@ const IndexPage = () => (
     <h1>Hi people</h1>
     <p>
       Using this older version of Gatsby (v2.19.43) the scroll restoration works
-      as expected. To illustrate, scroll to the bottom of this page, click the
-      Page 2 link, then click the browser back button. You should end up at the
-      bottom of the index page exactly where you left off.
+      as expected with popState page transitions. To illustrate, scroll to the
+      bottom of this page, click the Page 2 link, and then click the browser
+      back button. You should end up at the bottom of the index page exactly
+      where you left off.
     </p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
