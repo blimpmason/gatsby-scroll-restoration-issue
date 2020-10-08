@@ -18,21 +18,21 @@ const TRANSITION_DURATION = 400
 const TRANSITION_STYLES = {
   default: {
     opacity: 1,
-    transition: `all ${TRANSITION_DURATION}ms ease-out`,
+    transition: `all ${TRANSITION_DURATION}ms ease-out`
   },
   entering: {
-    opacity: 0,
+    opacity: 0
   },
   entered: {
-    opacity: 1,
+    opacity: 1
   },
   exiting: {
     opacity: 0,
-    transition: `all ${TRANSITION_DURATION}ms ease-in`,
+    transition: `all ${TRANSITION_DURATION}ms ease-in`
   },
   exited: {
-    opacity: 0,
-  },
+    opacity: 0
+  }
 }
 
 const Layout = ({ children, location }) => {
@@ -53,7 +53,7 @@ const Layout = ({ children, location }) => {
         style={{
           margin: `0 auto`,
           maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
+          padding: `0 1.0875rem 1.45rem`
         }}
       >
         <SwitchTransition>
@@ -67,13 +67,13 @@ const Layout = ({ children, location }) => {
               <div
                 style={{
                   ...TRANSITION_STYLES.default,
-                  ...TRANSITION_STYLES[status],
+                  ...TRANSITION_STYLES[status]
                 }}
               >
                 <main>{children}</main>
                 <footer
                   style={{
-                    marginTop: `2rem`,
+                    marginTop: `2rem`
                   }}
                 >
                   © {new Date().getFullYear()}, Built with
@@ -90,7 +90,7 @@ const Layout = ({ children, location }) => {
 }
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 }
 
 export default Layout
