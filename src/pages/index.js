@@ -9,10 +9,10 @@ const IndexPage = () => (
     <SEO title="Home" />
     <h1>Hi people</h1>
     <p>
-      To illustrate the scroll restoration issue, please scroll all the way to
-      the bottom of this page, click the link to Page 2, and then click your
-      browser back button. You will land back at the top of the index page
-      rather than where you left off.
+      Using this older version of Gatsby (v2.19.43) the scroll restoration works
+      as expected. To illustrate, scroll to the bottom of this page, click the
+      Page 2 link, then click the browser back button. You should end up at the
+      bottom of the index page exactly where you left off.
     </p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
